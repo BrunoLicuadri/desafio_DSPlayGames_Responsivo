@@ -485,24 +485,32 @@ footer {
     
     /*NEWS SECTION*/
     
+    .porcaria-de-div {
+        width: 990px;
     
-    #news h2 {
-        font-size: 36px; 
-        padding:  0px 40px;
     }
-    
+
+
     .news-container {
+        display: flex;
         width: 100%;
         max-width: 990px;
         margin: 0 auto;
-        height: 831px;
     }
     
+    #news h2 {
+        font-size: 16px; 
+        padding:  0px 40px;
+    }
+
+
+    
     .main-news {
-        width: calc(100%-80px)
+        width: calc(100%-80px);
         max-width: 990px;
         height: 247px;
         margin: 40px;
+        align-items: center;
     }  
     
     
@@ -631,10 +639,7 @@ footer {
     .footer-terms {
         width: 105px;
     }
-    
-    
-
-    }
+}
     
     
     
