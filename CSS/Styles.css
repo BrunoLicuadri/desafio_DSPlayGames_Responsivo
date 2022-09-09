@@ -186,6 +186,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .main-news {
     background-color: var(--light-grey);
     width: 300px;
@@ -434,7 +435,37 @@ footer {
     text-align: center;
 }
 
-@media(min-width:768px) {
+@media (min-width:768px) {
+
+    /*HEADER*/
+    
+    nav {
+        width: 1200px;
+    }
+
+    header {
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+       
+    }
+    
+    header img{
+        Width: 62px;
+        Height: 62px;
+    }
+    
+    .header-container {
+        width: 100%;
+        max-width: 990px;
+        flex-wrap: none;
+        justify-content: space-evenly;
+    }
+    
+    
     .menu-links li {
         margin: 35px 29px;
     }
@@ -442,31 +473,38 @@ footer {
     .menu-links a {
         color: var(--basic-white);
         font-size: 14px;
+        font-weight: 400px;
+    }
+    
+    
+    .profile-img {
+        padding-right: 0px;
     }
     
     
     
-    
-    
-    .news-container {
-        width: 100%
-        max-width= 576px;
-    
-    }
-    
-    
-    .main-news {
-        width: calc(100%-210px)
-        max-width: 990px;
-        height: 247px;
-        margin: 40px 105px;
-    }  
+    /*NEWS SECTION*/
     
     
     #news h2 {
         font-size: 36px; 
-        padding:  0 40px;
+        padding:  0px 40px;
     }
+    
+    .news-container {
+        width: 100%;
+        max-width: 990px;
+        margin: 0 auto;
+        height: 831px;
+    }
+    
+    .main-news {
+        width: calc(100%-80px)
+        max-width: 990px;
+        height: 247px;
+        margin: 40px;
+    }  
+    
     
     .main-news h3{
         font-size: 24px;
@@ -490,15 +528,15 @@ footer {
     
     
     
+    /*GAMES SECTION*/
     
     #games {
         width: 100%
         max-width: 1200px;
         margin: 0 auto;
         height: 559px;
-        flex-wrap: none;
-        margin-bottom: 13px;
-    
+        flex-wrap: nowrap;
+        margin-bottom: 0;
     }
     
     
@@ -519,21 +557,17 @@ footer {
     
     
     
+    /*SUBSCRIBE SECTION*/
     
-    #subscribe {
-        displey: flex;
-    }
     
     #subscribe h2 {
         font-size: 36px;
-        margin: 40px;
+        margin: 40px 0;
     }
     
     
     .subscribe-container {
-        width: 100%
-        max-width: 1200px;
-        margin: 0 auto;
+        width: 120
     }
     
     
@@ -542,7 +576,9 @@ footer {
         max-width: 790px;
         margin: 0 auto;
         height: 522px;
-        margin-bottom: 60px;
+        padding-top: 0;
+        padding: 40px;
+        margin-bottom: 20px;
     }
     
     
@@ -554,26 +590,57 @@ footer {
     
     
     .sub-form-container h3{
-        padding-bottom: 21px;
+        padding-top: 21px;
         margin-left: 72px;
     }
     
-    .form-content input {
-        height: 23px;
-        width: 23px;
-        border-color: #999999 solid;
-        margin-bottom: 8px;
+    
+    
+    /*FOOTER*/
+    
+    footer {
+        display: flex;
+        width: 1200px;
+        height: 190px;
+        margin 0 auto;
     }
     
-    
-    .button-container {
-        width: 100%
-        max-width: 790px;
+    .footer-container{
+        width: 100%;
+        max-width: 1200px;
+        height: 190px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
     }
+    
+    
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        width: 105px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400px;
+        color: var(--basic-white);  
+    }
+    
+    
+    .footer-terms {
+        width: 105px;
+    }
+    
+    
 
-}
-
-
-
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 
