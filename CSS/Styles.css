@@ -111,22 +111,6 @@ footer {
 
 }
 
-#games h2 {
-    font-size: 24;
-    font-weight: 700;
-    color: var(--light-green);
-    padding-top: 40px;
-    padding-bottom: 28px;
-}
-
-#subscribe h2 {
-    color: var(--dark-grey);
-    font-size: 24px;
-    font-weight: 700;
-    padding-top: 40px;
-    padding-bottom: 16px;
-}
-
 #subscribe {
     display: flex;
 }
@@ -224,6 +208,14 @@ footer {
     padding: 12px;
 }
 
+.game-title {
+    font-size: 24;
+    font-weight: 700;
+    color: var(--light-green);
+    padding-top: 40px;
+    padding-bottom: 28px;
+}
+
 .game-card {
     display: flex;
     justify-content: center;
@@ -272,6 +264,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sub-title {
+    color: var(--dark-grey);
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 16px;
 }
 
 .subscribe-container {
@@ -446,6 +446,7 @@ footer {
     header {
         width: 100%;
         max-width: 1200px;
+        margin: 0 auto;
     }
     
     header h1 {
@@ -485,9 +486,17 @@ footer {
     
     /*NEWS SECTION*/
     
+    #news {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .porcaria-de-div {
-        width: 990px;
-    
+        /*inutil*/
+    }
+
+    #news a {
+        padding: 7px 0 15px 0;
     }
 
 
@@ -499,39 +508,44 @@ footer {
     }
     
     #news h2 {
-        font-size: 16px; 
-        padding:  0px 40px;
+        font-size: 36px;
+        padding: 0;
+        padding-top:  40px;
     }
 
 
     
     .main-news {
-        width: calc(100%-80px);
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 80px);
         max-width: 990px;
         height: 247px;
-        margin: 40px;
-        align-items: center;
+        margin: 20px 40px;
     }  
     
     
     .main-news h3{
         font-size: 24px;
-        padding-top: 16px;
-        padding-left: 40px;
+        padding: 0px;
     }
     
     .main-news h4{
         font-size: 16px;
-        padding: 0 40px;
+        padding: 0;
     }
     
     .date {
-        padding: 0 40px 16px 40px;
+        padding: 0;
         
     }
-    
+
     .main-text {
-        padding: 16px 40px 7px 40px;
+        padding: 16px 0 7px 0;
+    }
+
+    .mini-container {
+        padding: 15px 40px;
     }
     
     
@@ -539,54 +553,72 @@ footer {
     /*GAMES SECTION*/
     
     #games {
-        width: 100%
+        width: 100%;
         max-width: 1200px;
         margin: 0 auto;
         height: 559px;
-        flex-wrap: nowrap;
         margin-bottom: 0;
+        justify-content: space-evenly;
     }
-    
-    
-    
-    #games h2 {
-        font-size: 36px;
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-    
-    
-    .game-card {
+
+    .game-title {
+        width: 1200px;
         display: flex;
         justify-content: center;
-        flex-direction: row;
-        margin: 30px;
+        align-items: center;
+        font-size: 36px;
+        padding: 0;
+    }
+
+    
+    
+    .game-container {
+        width: 100%;
+        max-width: 990px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .game-card {
+        margin: 0px;
     }
     
     
     
     /*SUBSCRIBE SECTION*/
     
+    #subscribe {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     
-    #subscribe h2 {
+    .sub-title {
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 36px;
-        margin: 40px 0;
+        padding: 40px;
     }
-    
-    
-    .subscribe-container {
-        width: 120
-    }
-    
+      
     
     .inner-container-Sub {
-        width: 100%
+        width: 100%;
         max-width: 790px;
         margin: 0 auto;
         height: 522px;
         padding-top: 0;
-        padding: 40px;
-        margin-bottom: 20px;
+        padding: 52px 75px;
+        margin-bottom: 60px;
+    }
+
+    .subscribe-container {
+        width: 100%;
+        max-width: 790px;
+        margin: 0 auto;
+        display: flex;
     }
     
     
@@ -596,10 +628,27 @@ footer {
         width: 642px;
     }
     
+    .sub-form-container {
+        height: 412px;
+    }
     
     .sub-form-container h3{
         padding-top: 21px;
-        margin-left: 72px;
+        margin-left: 0;
+    }
+
+    .form-container label{
+        padding-left: 8px;
+    }
+
+    .button-container {
+        width: 100%;
+        max-width: 790;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        padding-bottom: 20px;
     }
     
     
@@ -607,10 +656,10 @@ footer {
     /*FOOTER*/
     
     footer {
-        display: flex;
-        width: 1200px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
         height: 190px;
-        margin 0 auto;
     }
     
     .footer-container{
